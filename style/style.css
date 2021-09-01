@@ -1,0 +1,162 @@
+:root{
+    --background:var(#e6e6e6);
+    --headerbackground:var(#f2f6f5);
+    --text: var('Slabo 27px', serif;);
+    --header-text: var('Slabo 27px', serif;);
+    --footerbackground: var(#434b4d);
+    
+}
+/* general rules */
+
+.text{
+    font-size: calc(12px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Slabo 27px', serif;
+}
+
+.nav{
+    font-family: 'Slabo 27px', serif;
+}
+
+.button-text{
+    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));;
+}
+
+.button-text{
+    margin: 0px;
+}
+.header a{
+    color: black;
+    text-decoration: none;
+}
+.header .welcome-text{
+    color: blue;
+}
+a:hover{
+    transition: ease 1s;
+    color: lightskyblue;
+}
+.footer a{
+    color: blue;
+}
+/* end of general rules */
+/* header rules */
+.upper-main{
+    background-color: #e6e6e6;
+}
+
+.upper-header{
+    background-color: #f2f6f5;
+}
+
+.main-header{
+    font-family: 'Slabo 27px', serif;
+    border-left: 2px solid turquoise;
+    padding-left: 2px;
+}
+
+.button-header{
+    background-color: #e6e6e6;
+}
+
+.header .nav-text{
+    margin:0px
+}
+.shop-button{
+    padding: 0;
+    padding: 5px 0px;
+}
+.header .searchbar{
+    border: 1px solid lightgrey;
+}
+#form .search-button{
+    border: 1px solid lightgrey;
+}
+#form .icon-search{
+    font-size: 14px;
+    
+}
+/* need margin on the nav so the icons are even with it 
+    margin between items for buy
+*/
+
+/* end of header rules */
+/* main rules */
+
+.section6{
+    background-color:  #f2f6f5;
+}
+
+.item-name{
+    font-family: serif;
+    font-size: calc(14px + (23 - 12) * ((100vw - 300px) / (1600 - 300)));;
+}
+
+/* end of main rules */
+/* footer rules */
+.footer{
+    background-color: #434b4d;
+}
+
+.footer-header{
+    color: whitesmoke;
+    font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));;
+}
+
+.footer ul{
+    list-style-type: square;
+}
+
+.footer li{
+    color: lightskyblue;
+}
+
+.footer .footer-text{
+    color:grey;
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));;
+}
+
+.social-icons{
+    list-style-type: none;
+}
+
+.time-text{
+    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));;
+}
+.footer .footer-section2 .icon{
+    color: white;
+    font-size: 30px;
+    border:1px solid #616767;
+    background: #616767;
+    padding: 5px;
+}
+.colophon-text{
+    font-family: serif;
+    color: white;
+}
+/* end of footer rules */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon{
+    font-size: 12px;
+}
+.header .icon{
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+/* 
+    margin in the eyecatcher section
+    search bar needs to be centered
+
+
+
+*/
+.landing-img{
+    width: 140%;
+}
