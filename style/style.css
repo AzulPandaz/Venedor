@@ -12,6 +12,9 @@
     font-size: calc(12px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
     font-family: 'Slabo 27px', serif;
 }
+.main-text{
+    margin: 0px;
+}
 
 .nav{
     font-family: 'Slabo 27px', serif;
