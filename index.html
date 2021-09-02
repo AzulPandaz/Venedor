@@ -27,7 +27,7 @@
         <section class="upper-header">
             <section class="section container container-fluid">
                 <div class="row ">
-                    <div class="col-12">
+                    <div class="col-12 col-lg-6">
                         <ul class="nav upper-nav-list row justify-content-between">
                             <li class="upper-header-list-item d-flex col-3 justify-content-center">
                                 <div class="nav-with-icon">
@@ -71,10 +71,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 text-center
-                    ">
+                    <div class="col-12 col-lg-6
+                    d-flex justify-content-center justify-content-lg-end">
                         <p class="text welcome-text">
-                            Welcome visitor you can <a href="#link">login</a> or <a href="#link">create an account</a>
+                            Welcome visitor you can <a href="#link" class="header-link">login</a> or <a href="#link" class="header-link">create an account</a>
                         </p>
                     </div>
                 </div>
@@ -83,31 +83,44 @@
         <section class="section middle-header">
             <div class="container container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-4 logo">
-                        <img src="media/logo.PNG" alt="">
+                    <div class="col-4 col-lg-1 logo">
+                        <img src="media/logo.PNG" alt="logo-img">
                     </div>
-                    <div class="col-12 universal">
-                        <div class="row justify-content-between">
-                            <div class="col-2">
-                                <div class="btn-group">
-                                    <button type="button" class="btn button button-header">Payment</button>
-                                    <button type="button" class="btn button button-header dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="sr-only">Toggle Dropdown</span>
+                    <div class="col-12 col-lg-11 universal">
+                        <div class="row justify-content-around justify-content-lg-end">
+                            <div class="col-5 col-lg-3">
+                                <div class="input-group mb-3 button-header">
+                                    <div class="input-group-prepend">
+                                    <label class="input-group-text button-text" for="inputGroupSelect01">Currency</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected></option>
+                                    <option value="1">&dollar;</option>
+                                    <option value="2">&euro;</option>
+                                    <option value="3">&yen;</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="btn-group">
+                                    <button type="button" class="btn button button-header button-text">Payment</button>
+                                    <button type="button"
+                                        class="btn button button-header dropdown-toggle dropdown-toggle-split"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
                                     </button>
                                     <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">$</a>
-                                    <a class="dropdown-item" href="#">&pound;</a>
-                                    <a class="dropdown-item" href="#">&yen;</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Link to Currency</a>
+                                        <a class="dropdown-item" href="#">$</a>
+                                        <a class="dropdown-item" href="#">&pound;</a>
+                                        <a class="dropdown-item" href="#">&yen;</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Link to Currency</a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="col-2">
-                                <p class="button-header language btn button-text">English</p>
+                            <div class="col-2 text-lg-center">
+                                <p class="button-header language btn button-text bt-sm">English</p>
                             </div>
-                            <div class="col-2">
-                                <button type="button" class="shop-button btn btn-info text-nowrap d-flex">
+                            <div class="col-3 col-lg-2">
+                                <button type="button" class="shop-button btn btn-info bt-sm text-nowrap d-flex">
                                     <svg class="icon icon-cart">
                                         <use xlink:href="#icon-cart"></use>
                                     </svg>
@@ -122,18 +135,18 @@
         <div class="section lower-header">
             <div class="container container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-12">
+                    <div class="col-12 col-lg-6">
                         <ul class="nav lower-header-nav justify-content-between">
-                            <li class="lower-header-nav-item"><a href="#link">Fashion</a></li>
-                            <li class="lower-header-nav-item"><a href="#link">Electronics</a></li>
-                            <li class="lower-header-nav-item"><a href="#link">Gifts</a></li>
-                            <li class="lower-header-nav-item"><a href="#link">Books</a></li>
-                            <li class="lower-header-nav-item"><a href="#link">At Home</a></li>
-                            <li class="lower-header-nav-item"><a href="#link">Music</a></li>
+                            <li class="lower-header-nav-item"><a href="#link" class="header-link">Fashion</a></li>
+                            <li class="lower-header-nav-item"><a href="#link" class="header-link">Electronics</a></li>
+                            <li class="lower-header-nav-item"><a href="#link" class="header-link">Gifts</a></li>
+                            <li class="lower-header-nav-item"><a href="#link" class="header-link">Books</a></li>
+                            <li class="lower-header-nav-item"><a href="#link" class="header-link">At Home</a></li>
+                            <li class="lower-header-nav-item"><a href="#link" class="header-link">Music</a></li>
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <form id="form">
+                    <div class="col-6 col-md-10 col-lg-6 text-md-center d-flex justify-content-lg-end">
+                        <form id="form" class="search-bar-header">
                             <input type="search" id="form" name="form1" placeholder="Search here..." class="searchbar">
                             <button class="search-button "><svg class="icon icon-search">
                                     <use xlink:href="#icon-search"></use>
@@ -182,14 +195,14 @@
         <section class="divder eye-catcher-section">
             <div class="container container-fluid">
                 <div class="row text-center">
-                    <div class="col-12">
-                        <img src="Media/sale.PNG" alt="deals">
+                    <div class="col-12 col-lg-4">
+                        <img src="Media/sale.PNG" alt="deals" class="img-fluid">
                     </div>
-                    <div class="col-12">
-                        <img src="Media/freeshiping.PNG" alt="deals">
+                    <div class="col-12 col-lg-4">
+                        <img src="Media/freeshiping.PNG" alt="deals" class="img-fluid">
                     </div>
-                    <div class="col-12">
-                        <img src="Media/newarrivals.PNG" alt="deals">
+                    <div class="col-12 col-lg-4">
+                        <img src="Media/newarrivals.PNG" alt="deals" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -197,12 +210,12 @@
         <section class="section discounts section2">
             <section class="container container-fluid">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-9 col-lg-10">
                         <h2 class="main-header">
                             Latest
                         </h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 col-lg-2">
                         <button type="button" class="btn btn-light"><svg class="icon icon-arrow-left2">
                                 <use xlink:href="#icon-arrow-left2"></use>
                             </svg></button>
@@ -212,36 +225,45 @@
                     </div>
                 </div>
                 <div class="row">
-                    <p class="text col-12">Buy discount terms from the latest collections of world brands.</p>
+                    <p class="text col-12 sub-header">Buy discount terms from the latest collections of world brands.
+                    </p>
                 </div>
                 <div class="row">
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/knittedsweater.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/knittedsweater.PNG" alt="product-img">
                         <p class="item-name">
                             Jewlery Bracelet Cara Accessories
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/bag.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/bag.PNG" alt="product-img">
                         <p class="item-name">
-                            Jewlery Bracelet Cara Accessories
+                            Jessica London Short Trench Coat
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/knittedsweater.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/knittedsweater.PNG" alt="product-img">
                         <p class="item-name">
-                            Jewlery Bracelet Cara Accessories
+                            Mocca Stretch Leather Gloves
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/bag.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/bag.PNG" alt="product-img">
                         <p class="item-name">
-                            Jewlery Bracelet Cara Accessories
+                            Limited Edition Kitted Sweater
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -249,7 +271,7 @@
         <section class="section section3 welcome-section">
             <section class="container container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-lg-6">
                         <div class="row">
                             <div class="col">
                                 <h2 class="main-header">Welcome to Venedor</h2>
@@ -262,8 +284,8 @@
                             consectetur consequatur. Possimus magni nostrum esse odit voluptatibus et molestiae? Eos
                             illo ab impedit ipsum amet eveniet eius id saepe suscipit.</p>
                     </div>
-                    <div class="col-8">
-                        <img src="Media/WelcomeVenedor.PNG" alt="" class="landing-img">
+                    <div class="col-8 col-lg-6 d-flex justify-content-lg-around">
+                        <img src="Media/WelcomeVenedor.PNG" alt="welcome-img" class="landing-img">
                     </div>
                 </div>
             </section>
@@ -271,12 +293,12 @@
         <section class="section section4 best-sellers-section">
             <section class="container container-fluid">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-9 col-lg-10">
                         <h2 class="main-header">
                             Latest
                         </h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 col-lg-2">
                         <button type="button" class="btn btn-light"><svg class="icon icon-arrow-left2">
                                 <use xlink:href="#icon-arrow-left2"></use>
                             </svg></button>
@@ -286,40 +308,49 @@
                     </div>
                 </div>
                 <div class="row">
-                    <p class="text col-12">Buy discount terms from the latest collections of world brands.</p>
+                    <p class="text col-12 sub-header">Special offers and biggest discounts for the most popular
+                        products.</p>
                 </div>
                 <div class="row">
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/knittedsweater.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/knittedsweater.PNG" alt="product-img">
                         <img src="" alt="">
                         <p class="item-name">
                             Jewlery Bracelet Cara Accessories
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/bag.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/bag.PNG" alt="product-img">
                         <img src="" alt="">
                         <p class="item-name">
-                            Jewlery Bracelet Cara Accessories
+                            Jessica London Short Trench Coat
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/knittedsweater.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/knittedsweater.PNG" alt="product-img">
                         <img src="" alt="">
                         <p class="item-name">
-                            Jewlery Bracelet Cara Accessories
+                            Mocca Stretch Leather Gloves
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
-                    <div class="col-12 discounted-items text-center">
-                        <img src="Media/bag.PNG" alt="">
+                    <div class="col-12 col-md-6 col-lg-3 discounted-items text-center">
+                        <img src="Media/bag.PNG" alt="product-img">
                         <img src="" alt="">
                         <p class="item-name">
-                            Jewlery Bracelet Cara Accessories
+                            Limited Edition Knitted Sweater
                         </p>
-                        <button type="button" class="btn btn-dark"><p class="text main-text">Add to cart</p></button>
+                        <button type="button" class="btn btn-dark main-button">
+                            <p class="text main-text">Add to cart</p>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -327,12 +358,12 @@
         <section class="section section5 Manufactures">
             <div class="container container-fluid">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-9 col-lg-10">
                         <h2 class="main-header">
                             Manufactures
                         </h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 col-lg-2">
                         <button type="button" class="btn btn-light"><svg class="icon icon-arrow-left2">
                                 <use xlink:href="#icon-arrow-left2"></use>
                             </svg></button>
@@ -340,26 +371,29 @@
                                 <use xlink:href="#icon-arrow-right2"></use>
                             </svg></button>
                     </div>
-                    <img src="Media/brandlogo.PNG" alt="" class="brand-logo col-12">
-                    <img src="Media/brandlogo.PNG" alt="" class="brand-logo col-12">
-                    <img src="Media/brandlogo.PNG" alt="" class="brand-logo col-12">
-                    <img src="Media/brandlogo.PNG" alt="" class="brand-logo col-12">
-                    <img src="Media/brandlogo.PNG" alt="" class="brand-logo col-12">
-                    <img src="Media/brandlogo.PNG" alt="" class="brand-logo col-12">
+                    <img src="Media/brandlogo.PNG" alt="manufactures-img" class="brand-logo col-12 col-md-4 col-lg-2">
+                    <img src="Media/brandlogo.PNG" alt="manufactures-img" class="brand-logo col-12 col-md-4 col-lg-2">
+                    <img src="Media/brandlogo.PNG" alt="manufactures-img" class="brand-logo col-12 col-md-4 col-lg-2">
+                    <img src="Media/brandlogo.PNG" alt="manufactures-img" class="brand-logo col-12 col-md-4 col-lg-2">
+                    <img src="Media/brandlogo.PNG" alt="manufactures-img" class="brand-logo col-12 col-md-4 col-lg-2">
+                    <img src="Media/brandlogo.PNG" alt="manufactures-img" class="brand-logo col-12 col-md-4 col-lg-2">
                 </div>
             </div>
         </section>
         <section class="section section6">
             <section class="container container-fluid">
                 <div class="row text-center justify-content-center">
-                    <div class="col-8">
-                        <p class="text main-text">Sign Up To Receive The Latest Fashion News</p>
+                    <div class="col-8 col-md-6">
+                        <p class="text main-text register">Sign Up To Receive The Latest Fashion News</p>
                     </div>
-                    <div class="col-8">
-                        <form id="form">
-                            <input type="search" id="form" name="form1" placeholder="Enter your email address">
-                            <button type="button" class="btn btn-dark">Sign Up</button>
-                        </form>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <form id="form" class="col-12 d-flex justify-content-center justify-content-lg-end">
+                                <input type="search" id="form" name="form1" placeholder="Enter your email address" class="news-letter-sign-up">
+                                <button type="button" class="text-center btn btn-dark sign-up-button ">Sign Up</button>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -369,77 +403,77 @@
         <section class="footer-section1">
             <section class="container container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-6">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <h3 class="footer-header header">My Account</h3>
                         <ul class="account-list">
                             <li class="account-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">My account</p>
                             </li>
                             <li class="account-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Personal Information</p>
                             </li>
                             <li class="account-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Addresses</p>
                             </li>
                             <li class="account-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Discount</p>
                             </li>
                             <li class="account-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Orders history</p>
                             </li>
                             <li class="account-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Your Vouchers</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <h3 class="footer-header">Information</h3>
                         <ul class="information-list">
                             <li class="information-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">New products</p>
                             </li>
                             <li class="information-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Top sellers</p>
                             </li>
                             <li class="information-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Specials</p>
                             </li>
                             <li class="information-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Manufacturers</p>
                             </li>
                             <li class="information-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Suppliers</p>
                             </li>
                             <li class="information-list-item text">
-                                <p class="footer-text">Lorem, ipsum.</p>
+                                <p class="footer-text">Our stores</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-7">
+                    <div class="col-7 col-md-4 col-lg-3">
                         <h3 class="footer-header header">From Twitter</h3>
                         <p class="footer-text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
                             quam hic deserunt, nisi laborum quaerat nobis dignissimos similique non repellat. <a
-                                href="#link">http://t,co/MacsjST476</a></p>
+                                href="#link" class="footer-link">http://t,co/MacsjST476</a></p>
                         <p class="time-text text-muted">about 1 hours ago</p>
                         <p class="footer-text text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
                             quam hic deserunt, nisi laborum quaerat nobis dignissimos similique <a
-                                href="#link">http://t,co/MacsjST476</a> non repellat. </p>
+                                href="#link" class="footer-link">http://t,co/MacsjST476</a> non repellat. </p>
                         <p class="time-text text-muted">about 1 hours ago</p>
 
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-lg-3">
                         <div class="row">
-                            <h2 class="footer-header col-9">
+                            <h2 class="footer-header col-9 col-lg-6">
                                 Facebook
                             </h2>
-                            <div class="col-3">
+                            <div class="col-3 col-lg-6">
                                 <button type="button" class="btn btn-info"><svg class="icon icon-checkmark2">
                                         <use xlink:href="#icon-checkmark2"></use>
                                     </svg>Like!</button>
                             </div>
                         </div>
                         <p class="footer-text facebook-text">
-                            1452 people like <a href="#link">PromoKit</a>
+                            1452 people like <a href="#link" class="footer-link">PromoKit</a>
                         </p>
                         <div class="row text-center">
                             <div class="col-4">
@@ -487,7 +521,7 @@
         <section class="footer-section2 section colophon">
             <section class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-lg-6">
                         <ul class="socials nav justify-content-between ">
                             <li class="social-icons"><a href="#link"><svg class="icon icon-facebook">
                                         <use xlink:href="#icon-facebook"></use>
@@ -515,7 +549,7 @@
                                     </svg></a></li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-lg-6">
                         <p class="colophon-text text-center">&copy;2012 Powerd by WooCommerce &trade;. All Rights
                             Reserved.</p>
                     </div>

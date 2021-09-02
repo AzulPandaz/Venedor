@@ -20,27 +20,39 @@
     font-family: 'Slabo 27px', serif;
 }
 
+.nav-text{
+    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));;
+}
+
 .button-text{
     font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));;
+}
+
+.upper-nav-list .icon{
+    color: black;
 }
 
 .button-text{
     margin: 0px;
 }
-.header a{
+
+.header-link{
     color: black;
     text-decoration: none;
 }
-.header .welcome-text{
+.welcome-link{
     color: blue;
 }
-a:hover{
+
+.header-link:hover{
     transition: ease 1s;
     color: lightskyblue;
 }
-.footer a{
+
+.footer-link{
     color: blue;
 }
+
 /* end of general rules */
 /* header rules */
 .upper-main{
@@ -51,39 +63,40 @@ a:hover{
     background-color: #f2f6f5;
 }
 
-.main-header{
-    font-family: 'Slabo 27px', serif;
-    border-left: 2px solid turquoise;
-    padding-left: 2px;
+.upper-header-list-item{
+    margin-top: 5px;
 }
 
 .button-header{
     background-color: #e6e6e6;
+    margin-top: 15px;
+    height: 35px;
 }
 
 .header .nav-text{
     margin:0px
 }
+
 .shop-button{
-    padding: 0;
-    padding: 5px 0px;
+    padding: 6px 12px;
+    margin-top: 15px;
+    height: 38px;
 }
+
 .header .searchbar{
     border: 1px solid lightgrey;
 }
+
 #form .search-button{
     border: 1px solid lightgrey;
 }
+
 #form .icon-search{
     font-size: 14px;
-    
 }
-/* need margin on the nav so the icons are even with it 
-    margin between items for buy
-*/
 
-/* end of header rules */
-/* main rules */
+    /* end of header rules */
+    /* main rules */
 
 .section6{
     background-color:  #f2f6f5;
@@ -92,8 +105,42 @@ a:hover{
 .item-name{
     font-family: serif;
     font-size: calc(14px + (23 - 12) * ((100vw - 300px) / (1600 - 300)));;
+    color: grey;
 }
 
+.main-button{
+    margin-bottom: 10px;
+}
+
+.main-header{
+    font-family: 'Slabo 27px', serif;
+    border-left: 2px solid turquoise;
+    padding-left: 2px;
+    margin: 10px 0px;
+}
+
+.sub-header{
+    color: grey;
+}
+.brand-logo{
+    margin-bottom: 10px;
+}
+
+.register{
+    font-family: 'Slabo 27px', serif;
+    font-size: calc(12px + (28 - 12) * ((100vw - 300px) / (1600 - 300)));;
+    font-weight: bold;
+}
+.main .news-letter-sign-up{
+    border: 3px solid orange;
+    border-radius: 3%;
+    width: 300px;
+    height: 50px;
+    
+}
+.sign-up-button{
+    height: 50px;
+}
 /* end of main rules */
 /* footer rules */
 .footer{
@@ -102,6 +149,7 @@ a:hover{
 
 .footer-header{
     color: whitesmoke;
+    font-family: 'Slabo 27px', serif;
     font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));;
 }
 
@@ -125,6 +173,7 @@ a:hover{
 .time-text{
     font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));;
 }
+
 .footer .footer-section2 .icon{
     color: white;
     font-size: 30px;
@@ -132,10 +181,12 @@ a:hover{
     background: #616767;
     padding: 5px;
 }
+
 .colophon-text{
     font-family: serif;
     color: white;
 }
+
 /* end of footer rules */
 .icon {
     display: inline-block;
@@ -153,13 +204,19 @@ a:hover{
     margin-bottom: 10px;
     margin-right: 2px;
 }
+.header .shop-button .icon-cart{
+    margin-bottom: 0px;
+}
+
 /* 
-    margin in the eyecatcher section
-    search bar needs to be centered
-
-
-
+margin in the eyecatcher section
+search bar needs to be centered
 */
 .landing-img{
-    width: 140%;
+    width: 110%;
+}
+@media (min-width:992px) and (max-width:1200px) {
+    .landing-img{
+        width: 100%;
+    }
 }
